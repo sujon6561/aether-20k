@@ -1,55 +1,61 @@
 import React from "react";
 
-const features = [
-  {
-    title: "20,000mAh Massive Capacity",
-    description:
-      "Stay powered throughout the day with a large 20,000mAh battery capacity.",
-  },
-  {
-    title: "100W Ultra-Fast Charging",
-    description:
-      "Experience high-speed 100W charging for compatible devices.",
-  },
-  {
-    title: "Multi-Device Support",
-    description:
-      "Charge your phone, tablet, laptop and other compatible devices.",
-  },
-  {
-    title: "Smart Safety Protection",
-    description:
-      "Built-in protection helps keep your devices safe from overheating, overcharging and short circuits.",
-  },
-];
-
-export default function Features() {
+const Features: React.FC = () => {
   return (
-    <section id="features" className="features-section">
+    <section className="features" id="features">
       <div className="features-container">
-        <div className="features-heading">
-          <span className="features-label">POWERFUL FEATURES</span>
-          <h2>Everything You Need to Stay Powered</h2>
+        <div className="section-heading">
+          <span className="section-label">WHY AETHER 20K</span>
+          <h2>
+            Power built for
+            <span> everyday life.</span>
+          </h2>
           <p>
-            Aether 20K combines massive capacity, fast charging and intelligent
-            protection in one powerful power bank.
+            Everything you need for fast, reliable and convenient charging
+            wherever you go.
           </p>
         </div>
 
         <div className="features-grid">
-          {features.map((feature, index) => (
-            <div className="feature-card" key={index}>
-              <div className="feature-number">
-                {String(index + 1).padStart(2, "0")}
-              </div>
+          <div className="feature-card">
+            <div className="feature-icon">⚡</div>
+            <h3>100W Fast Charging</h3>
+            <p>
+              Charge compatible devices quickly with powerful 100W USB-C
+              Power Delivery.
+            </p>
+          </div>
 
-              <h3>{feature.title}</h3>
+          <div className="feature-card">
+            <div className="feature-icon">🔋</div>
+            <h3>20,000mAh Capacity</h3>
+            <p>
+              High-capacity battery keeps your devices powered throughout the
+              day.
+            </p>
+          </div>
 
-              <p>{feature.description}</p>
-            </div>
-          ))}
+          <div className="feature-card">
+            <div className="feature-icon">🔌</div>
+            <h3>USB-C Power</h3>
+            <p>
+              Modern USB-C connectivity gives you fast and convenient charging
+              wherever you need it.
+            </p>
+          </div>
+
+          <div className="feature-card">
+            <div className="feature-icon">🛡️</div>
+            <h3>Reliable Protection</h3>
+            <p>
+              Designed with protection features to help keep your devices safe
+              while charging.
+            </p>
+          </div>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default Features;
