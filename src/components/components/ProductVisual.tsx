@@ -2,50 +2,64 @@ import React from "react";
 
 const ProductVisual: React.FC = () => {
   return (
-    <section className="product-visual">
-      <div className="product-card">
-        <div className="power-bank">
-          <div className="power-bank-screen">
-            <span>100W</span>
-            <small>SUPER FAST CHARGE</small>
-          </div>
+    <section className="product-visual" id="product">
+      <div className="product-visual-container">
 
-          <div className="power-bank-brand">AETHER</div>
+        <div className="product-image">
+          <div className="product-glow"></div>
 
-          <div className="power-bank-capacity">
-            20,000mAh
-          </div>
+          <div className="power-bank">
+            <div className="power-bank-screen">
+              20,000
+              <span>mAh</span>
+            </div>
 
-          <div className="power-bank-ports">
-            <span>USB-C</span>
-            <span>USB-A</span>
+            <div className="power-bank-brand">
+              AETHER
+            </div>
+
+            <div className="power-bank-port">
+              USB-C
+            </div>
           </div>
         </div>
 
         <div className="product-info">
-          <p className="product-label">AETHER 20K</p>
-          <h2>20,000mAh Power Bank</h2>
+          <span className="product-label">
+            AETHER 20K
+          </span>
+
+          <h2>
+            Power. <span>Anywhere.</span>
+          </h2>
+
           <p>
-            Powerful 100W fast charging with a premium compact design.
+            A powerful 20,000mAh power bank built for fast,
+            reliable charging wherever you go.
           </p>
 
-          <div className="product-specs">
+          <div className="product-highlights">
             <div>
-              <strong>100W</strong>
-              <span>Max Output</span>
+              <strong>20,000mAh</strong>
+              <span>Huge Capacity</span>
             </div>
 
             <div>
-              <strong>20K</strong>
-              <span>Battery</span>
+              <strong>100W</strong>
+              <span>Fast Charging</span>
             </div>
 
             <div>
               <strong>USB-C</strong>
-              <span>Fast Charge</span>
+              <span>Power Delivery</span>
             </div>
           </div>
+
+          <a href="#specs" className="product-btn">
+            View Specifications
+          </a>
         </div>
+
       </div>
     </section>
   );
