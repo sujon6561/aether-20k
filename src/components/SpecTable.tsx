@@ -1,5 +1,3 @@
-import React from "react";
-
 const specs = [
   ["Capacity", "20,000mAh"],
   ["Maximum Output", "100W"],
